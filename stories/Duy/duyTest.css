@@ -1,0 +1,25 @@
+.counter {
+    display: grid;
+    place-items: center;
+    gap: 12px;
+
+    .number {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .actions {
+        display: grid;
+        gap: 4px;
+        grid-auto-flow: column;
+
+        button {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}

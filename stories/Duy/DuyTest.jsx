@@ -8,10 +8,19 @@ import {Circle} from "../Circle/Circle";
  * Primary UI component for user interaction
  */
 export const DuyTest = (props) => {
+  const [counter, setCounter] = React.useState(0);
 
   return (
-    <div>
-      <Circle bgColor="blue" label="AAAA" />
+    <div className="counter">
+      <div className="number">{counter}</div>
+      <div className="actions">
+        <button onClick={() => {
+          setCounter(counter + 1);
+        }}>+</button>
+        <button onClick={() => {
+          setCounter(counter - 1);
+        }}>-</button>
+      </div>
     </div>
   );
 };

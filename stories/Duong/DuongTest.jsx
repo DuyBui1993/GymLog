@@ -8,7 +8,7 @@ import {Square} from "../Square/Square";
 export const DuongTest = (props) => {
   return (
       <div>
-        <Square bgColor="red" label="Square" textColor="green" borderRadius="20%" />
+        <Square bgColor="blue" label="Square 1111" textColor="yellow" borderRadius="50%" />
       </div>
   );
 };

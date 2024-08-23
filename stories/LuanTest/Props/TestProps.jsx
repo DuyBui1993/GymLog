@@ -8,7 +8,7 @@ export const TestProps = (props) => {
 
   return (
     <div>
-      <Rectangle bgColor="blue" label="AAAA" borderRadius="20%"/>
+      <Rectangle color="red" bgColor="yellow" label="AAAA" borderRadius="20px"/>
     </div>
   );
 };
