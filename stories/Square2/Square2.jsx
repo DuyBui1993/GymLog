@@ -5,11 +5,12 @@ import './square2.css';
 /**
  * Primary UI component for user interaction
  */
-export const Square2 = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Square2 = (props) => {
+  const { bgColor, textColor, label, borderRadius } = props;
   return (
-    <div className="square2">
-      {label}
-    </div>
+      <div style={{ backgroundColor: bgColor, color: textColor, borderRadius: borderRadius }} className="square2">
+        {label}
+      </div>
   );
 };
 
