@@ -8,18 +8,30 @@ import './todo.css';
 export const Todo = (props) => {
   const [todos, setTodos] = React.useState([]);
   const [completedTodos, setCompletedTodos] = React.useState([]);
+  const [text, setText] = React.useState("");
   return (
     <div className="todo-wrapper">
-      <input
-        type="text"
-        onKeyDown={(e ) => {
-          if (e.key === "Enter") {
-            const text = e.target.value;
-            setTodos([...todos, e.target.value]);
-            e.target.value = "";
-          }
-        }}
-      />
+      <div className="header-input">
+        <input
+          type="text"
+          onChange={e => {
+            setText(e.target.value);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              const text = e.target.value;
+              setTodos([...todos, e.target.value]);
+              e.target.value = "";
+            }
+          }}
+        />
+        <button onClick={(e) => {
+          setTodos([...todos, text]);
+        }}>
+          add
+        </button>
+      </div>
+
 
       <div className="section">
         <p>Todos</p>
