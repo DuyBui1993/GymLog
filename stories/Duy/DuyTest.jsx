@@ -15,9 +15,11 @@ export const DuyTest = (props) => {
       <div className="number">{counter}</div>
       <div className="actions">
         <button onClick={() => {
+          if (counter >= 10) return;
           setCounter(counter + 1);
         }}>+</button>
         <button onClick={() => {
+          if (counter <= 0) return;
           setCounter(counter - 1);
         }}>-</button>
       </div>
