@@ -5,40 +5,20 @@ import './circle.css';
 /**
  * Primary UI component for user interaction
  */
-export const Circle = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Circle = (props) => {
+  const { bgColor, label } = props;
+
   return (
-    <div className="circle">
+    <div style={{ backgroundColor: bgColor }} className="circle">
       {label}
     </div>
   );
 };
 
 Circle.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
+
 };
 
 Circle.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
-  onClick: undefined,
+
 };

@@ -11,9 +11,6 @@ import "../Square/Square"
 export const DuongTest = (props) => {
     const [counter, setCounter] = React.useState(0);
   return (
-      // <div>
-      //   <Square bgColor="red" label="Square" textColor="green" borderRadius="20%" />
-      // </div>
       <div className="counter">
           <div className="number"> {counter} </div>
           <div className="action">
