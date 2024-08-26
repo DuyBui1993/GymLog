@@ -1,0 +1,61 @@
+.container{
+    background-color:powderblue;
+    max-width: 600px;
+    padding: 30px;
+    gap: 12px;
+    margin: 50px auto;
+
+}
+h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.todo-item {
+    background: white;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 5px;
+    border: none;
+}
+.todo-list {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.section {
+    p {
+        display: grid;
+        margin: 4px 0 8px;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 25px;
+        place-items: center;
+    }
+}
+
+.task-input {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    place-items: center;
+    gap: 12px;
+    border: 1px;
+
+    input{
+        position: relative;
+        padding: 5px 15px;
+        border-radius: 3px;
+
+    }
+    button{
+        position: relative;
+        padding: 5px 15px;
+        border-radius: 3px;
+
+    }
+
+
+
+
+}
