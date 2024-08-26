@@ -9,10 +9,14 @@ export const TestState = (props) => {
     const [count, setCount] = useState(0);
 
     const buttonIncrement = () => {
-        setCount(count + 1);
+        if (count < 20) {
+            setCount(count + 1);
+        }
     };
     const buttonDecrement = () => {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     };
     const buttonReset = () => {
         setCount(0);

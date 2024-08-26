@@ -1,0 +1,55 @@
+.todo {
+    h1 {
+        text-align: center;
+    }
+
+    .input-btn {
+        color: red;
+    }
+
+    .header-input {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) max-content;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .todo-list {
+        .todo-item {
+            margin: 4px 0 8px;
+            background: #77ef4f;
+        }
+    }
+
+    .completed-list {
+        .completed-item {
+            margin: 4px 0 8px;
+            background: #c9f8b9;
+        }
+    }
+
+    .todo-list, .completed-list {
+        padding: 4px;
+
+        p {
+            background: #0c9e96;
+            margin: 4px 0 8px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
