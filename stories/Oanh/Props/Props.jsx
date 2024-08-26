@@ -1,5 +1,5 @@
 import React from "react";
-import {Square2} from "../Square2/Square2";
+import {Square2} from "../../Square2/Square2";
 
 export const Props =(props)=>{
     return(
