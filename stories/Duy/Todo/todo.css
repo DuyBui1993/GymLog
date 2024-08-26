@@ -1,0 +1,22 @@
+.todo-item {
+    background: red;
+}
+.todo-list {
+    background: blue;
+    padding: 4px;
+}
+
+.section {
+    p {
+        margin: 4px 0 8px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.header-input {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    align-items: center;
+    gap: 8px;
+}

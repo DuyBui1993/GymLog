@@ -1,0 +1,9 @@
+.rectangle {
+    background: red;
+    color: white;
+    width: 400px;
+    height: 200px;
+
+    display: grid;
+    place-items: center;
+}
