@@ -1,6 +1,4 @@
 import React from 'react';
-import {Square} from "../Square/Square";
-import PropTypes from "prop-types";
 import './duongTest.css';
 import "../Square/Square"
 
@@ -11,9 +9,6 @@ import "../Square/Square"
 export const DuongTest = (props) => {
     const [counter, setCounter] = React.useState(0);
   return (
-      // <div>
-      //   <Square bgColor="red" label="Square" textColor="green" borderRadius="20%" />
-      // </div>
       <div className="counter">
           <div className="number"> {counter} </div>
           <div className="action">
@@ -30,7 +25,7 @@ export const DuongTest = (props) => {
           </div>
           <div className="reset">
               <button onClick={() => {
-                  setCounter(0);
+                  setCounter(0)
               }}> Reset </button>
           </div>
       </div>
