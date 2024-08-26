@@ -1,6 +1,4 @@
 import React from 'react';
-import {Square} from "../Square/Square";
-import PropTypes from "prop-types";
 import './duongTest.css';
 import "../Square/Square"
 
@@ -27,7 +25,7 @@ export const DuongTest = (props) => {
           </div>
           <div className="reset">
               <button onClick={() => {
-                  setCounter(0);
+                  setCounter(0)
               }}> Reset </button>
           </div>
       </div>
