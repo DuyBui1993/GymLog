@@ -1,0 +1,49 @@
+.tab-container {
+    .tab-headers {
+        display: flex;
+
+    .tab-header {
+        color: whitesmoke;
+        width: 200px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid deeppink;
+        border-bottom: none;
+        border-radius: 5px 5px 0 0;
+        background-color: #670d33;
+
+        &:hover {
+        background-color: #a0144f;
+        }
+
+        &.active {
+            background-color: lightcoral;
+            border-bottom: 1px solid pink;
+        }
+    }
+    }
+
+    .tab-content {
+        .facebook{
+            background-color: #0766ff;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+        }
+        .youtube {
+            background-color: #ff0200;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+        }
+        .instagram {
+            background-color: rgb(255 97 38);
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}
