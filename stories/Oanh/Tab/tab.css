@@ -1,0 +1,46 @@
+.text{
+    text-align: center;
+}
+.tab-container {
+
+    .header {
+        display: flex;
+
+        .tab-name {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            background-color: #9ff9db;
+            min-width: 100px;
+
+
+            &:hover {
+                background-color: #84e7de;
+            }
+
+            &.active {
+                background-color: #33d7c9;
+                border-bottom: 1px solid #ccc;
+
+            }
+        }
+        .delete-tab {
+            margin-left: 55px;
+            background-color: transparent;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+
+    .content {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
