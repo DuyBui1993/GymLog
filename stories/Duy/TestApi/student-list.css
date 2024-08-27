@@ -1,0 +1,29 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 16px;
+    justify-content: center;
+    margin: 0 auto;
+
+    border: 1px solid black;
+    padding: 12px;
+
+    .student {
+        text-align: center;
+    }
+}
+
+button {
+    margin-top: 12px;
+    background: cyan;
+    border: 1px solid blue;
+    outline: 0;
+    width: 100%;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background: #0766ff;
+    }
+}
