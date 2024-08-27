@@ -3,7 +3,6 @@ import {TodoList} from "./List/TodoList";
 import './todo.css';
 
 
-
 /**
  * Primary UI component for user interaction
  */
@@ -56,9 +55,11 @@ export const Todo = (props) => {
 
             <div className="section">
                 <p>Completed</p>
-                <TodoList onItemClick={(todoIndex) => {
+                <div className="completed">
+                    <TodoList onItemClick={(todoIndex) => {
                     setCompletedTodos(completedTodos.filter((_, index) => index !== todoIndex));
                 }} todos={completedTodos}/>
+                </div>
             </div>
         </div>);
 };
