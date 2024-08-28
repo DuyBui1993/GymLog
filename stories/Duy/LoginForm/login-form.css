@@ -1,0 +1,79 @@
+.section {
+    width: 480px;
+    background: gray;
+    padding: 24px;
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 6px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        gap: 8px;
+    }
+}
+
+.form-wrapper {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    .header {
+        padding: 24px;
+        display: grid;
+        gap: 6px;
+    }
+}
+
+.form-with-input {
+    display: grid;
+    gap: 12px;
+
+}
+
+.form-email, .form-password {
+    display: grid;
+    gap: 4px;
+
+    input {
+        border: 1px solid gray;
+        padding: 0 8px;
+        border-radius: 8px;
+        height: 40px;
+    }
+}
+
+.section-remember-me {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr max-content;
+
+}
+
+.radio-remember-me {
+    display: grid;
+    gap: 4px;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+.submit-btn {
+    background: #0766ff;
+    border: 0;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+        background: #0056e0;
+    }
+}

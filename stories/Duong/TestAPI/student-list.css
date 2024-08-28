@@ -21,7 +21,6 @@
 }
 button {
     margin-top: 15px;
-    /*align-items: center;*/
     background: #a0144f;
     color: cornsilk;
     border: 3px solid #a0144f;
@@ -31,9 +30,8 @@ button {
     padding: 10px 15px;
     transition: all .3s ease;
 
-&
-:hover {
-    background: lightpink;
-}
+    &:hover {
+        background: lightpink;
+    }
 
 }
