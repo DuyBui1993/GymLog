@@ -41,7 +41,7 @@ export const LoginForm = (props) => {
                                         <label htmlFor="remember">Remember me</label>
                                     </div>
                                 </div>
-                                <a>Forgot password</a>
+                                <a href="#">Forgot password</a>
                             </div>
                             <button
                                 onClick={() => {
